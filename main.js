@@ -1,4 +1,4 @@
-// const audrey = document.getElementById("audrey")
+const audrey = document.getElementById("audrey")
 
 // /*
 //     Add an event listener to the `document` object to listen
@@ -19,6 +19,9 @@
 
 
 window.addEventListener('scroll', function() {
-    document.getElementById('audrey').styles = pageYOffset + 'px';
-    console.log("Scroll");
+    document.getElementById('audrey').style.height = window.scrollY + "60px";
+    document.getElementById('audrey') .style.width = window.scrollY + "60px";
+    this.console.log("scroll")
   });
+
+
